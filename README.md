@@ -1,16 +1,23 @@
-# wbti
+# nolilteo Client
+놀일터 클라이언트 입니다.
 
-A new Flutter project.
+# 기획
+직장인들을 위한 커뮤니티 프로젝트 입니다.
 
-## Getting Started
+## **앱의 기능 및 요구사항**
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **회원가입**
+    - 카카오, 구글, 애플, 네이버를 통한 회원가입이 가능해야 함
+    - 비회원은 게시글 확인만 가능
+- **wbti 설문 시스템**
+    - 사용자의 직장 내 성향을 파악할 수 있는 wbti 설문 시스템을 제공
+- **인기, hot 게시글 시스템**
+    - 메인 페이지에서 인기, 최신, hot 게시글을 피드 형태로 제공
+- **피드 형태의 게시글(태그, 카테고리, 관심 등록)**
+    - 사용자는 마음에 드는 카테고리와 태그를 등록할 수 있으며, 이를 통해 관련 게시글을 확인 가능
+- **좋아요, 댓글, 대댓글 기능이 포함된 커뮤니티**
+    - 게시글에 좋아요, 댓글, 대댓글 기능을 제공하여 사용자 간 상호작용을 유도
+- **사용자에 대한 신고 시스템**
+    - 부적절한 사용자를 신고할 수 있는 시스템을 제공
+- **세부적인 알림 조정 시스템**
+    - 사용자가 활동 내역과 게시글 반응에 대한 알림을 세부적으로 조정할 수 있음
