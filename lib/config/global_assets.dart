@@ -1,0 +1,40 @@
+class GlobalAssets {
+  static const String svgLogo = 'assets/images/global/logo.svg'; // 로고
+  static const String svgHomeOutline = 'assets/images/global/home_outline.svg'; // 홈 아웃라인
+  static const String svgAlarm = 'assets/images/global/alarm.svg'; // 알람
+  static const String svgAlarmActive = 'assets/images/global/alarm_active.svg'; // 알람
+  static const String svgSearch = 'assets/images/global/search.svg'; // 검색
+  static const String svgMenu = 'assets/images/global/menu.svg'; // 메뉴
+  static const String svgPlusInCircle = 'assets/images/global/plus_in_circle.svg'; // 원안에 플러스
+  static const String svgPlusInCircleGrey = 'assets/images/global/plus_in_circle_grey.svg'; // 원안에 플러스
+  static const String svgArrowRight = 'assets/images/global/arrow_right.svg'; // 오른쪽 화살표
+  static const String svgArrowLeft = 'assets/images/global/arrow_left.svg'; // 왼쪽 화살표
+  static const String svgEye = 'assets/images/global/eye.svg'; // 눈
+  static const String svgReply = 'assets/images/global/reply.svg'; // 댓글
+  static const String svgReplyActive = 'assets/images/global/reply_active.svg'; // 댓글 활성화
+  static const String svgLike = 'assets/images/global/like.svg'; // 좋아요 (댓글)
+  static const String svgLikeActive = 'assets/images/global/like_active.svg'; // 좋아요 활성화 (댓글)
+  static const String svgBigLike = 'assets/images/global/big_like.svg'; // 큰 좋아요
+  static const String svgBigLikeActive = 'assets/images/global/big_like_active.svg'; // 큰 좋아요 활성화
+  static const String svgSetUp = 'assets/images/global/set_up.svg'; // 설정
+  static const String svgShare = 'assets/images/global/share.svg'; // 공유
+  static const String svgCheckCircle = 'assets/images/global/check_circle.svg'; // 체크된 원
+  static const String svgCheckCircleEmpty = 'assets/images/global/check_circle_empty.svg'; // 빈 원
+  static const String svgCancel = 'assets/images/global/cancel.svg'; // x
+  static const String svgCancelInCircle = 'assets/images/global/cancel_in_circle.svg'; // 원안에 x
+  static const String svgCancelInCircleFill = 'assets/images/global/cancel_in_circle_fill.svg'; // 원안에 x
+  static const String svgVerticalThreeDot = 'assets/images/detail/vertical_three_dot.svg'; // 세로 ...
+  static const String svgVerticalThreeDotSmall = 'assets/images/detail/vertical_three_dot_small.svg'; // 세로 ... 작은거
+  static const String svgCalendar = 'assets/images/meeting/calendar.svg'; // 달력
+  static const String svgBan = 'assets/images/meeting/ban.svg'; // 밴
+  static const String svgGathering = 'assets/images/meeting/gathering.svg'; // 인간 두명
+  static const String svgPinDrop = 'assets/images/meeting/pin_drop.svg'; // 지도 마커 아이콘
+  static const String svgCrown = 'assets/images/meeting/crown.svg'; // 왕관
+  static const String svgAdd = 'assets/images/global/add.svg'; // 태그 추가할 때 쓰이는 아이콘
+  static const String svgAddActive = 'assets/images/global/add_active.svg'; // 태그 추가할 때 쓰이는 아이콘
+  static const String svgNieun = 'assets/images/global/nieun.svg'; // 니은
+  static const String svgReplyArrow = 'assets/images/detail/reply_arrow.svg'; // 답글 쓸 때 화살표
+  static const String svgSave = 'assets/images/global/save.svg'; // 저장하기
+  static const String svgHandle = 'assets/images/global/handle.svg'; // wbti 순서 바꿀 때 손잡이
+}
+

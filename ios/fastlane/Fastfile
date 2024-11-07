@@ -1,0 +1,83 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+default_platform(:ios)
+
+platform :ios do
+  desc "Description of what the lane does"
+  lane :beta do
+	get_certificates(
+		keychain_password: ENV['FASTLANE_PASSWORD']
+	)
+	get_provisioning_profile
+
+#	api_key = app_store_connect_api_key(
+#        key_id: "48UKVL69RS",
+#        issuer_id: "31d4df6f-f4fa-47da-a718-1a3f8a52642d",
+#        key_filepath: "myAuthKey.p8",
+#    )
+
+#	match(api_key: api_key)
+
+	increment_build_number(
+		build_number: latest_testflight_build_number + 1
+	)
+	build_app(
+		configuration: 'Release'
+	)
+	upload_to_testflight(
+		skip_waiting_for_build_processing: true
+	)
+	slack(
+		message: "Testflight 배포 성공!🚀",
+		slack_url: "https://hooks.slack.com/services/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"
+	)
+  end
+
+  lane :release do |options|
+	if options[:v]
+		get_certificates
+		get_provisioning_profile
+		increment_build_number(
+			build_number: latest_testflight_build_number + 1
+		)
+		build_app(
+			configuration: "Release"
+		)
+		upload_to_app_store(
+			app_version: options[:v],
+			submit_for_review: true,
+			force: true,
+			automatic_release: true,
+			skip_screenshots: true,
+			skip_metadata: false
+		)
+		slack(
+			message: "AppStore 배포 성공!!",
+			slack_url: "https://hooks.slack.com/services/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"
+		)
+	end
+  end
+
+  platform :ios do
+
+	error do |lane, exception, options|
+		slack(
+			message: "에러 발생 ${exception}",
+			success: false,
+			slack_url: "https://hooks.slack.com/services/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"
+		)
+	end
+  end
+end

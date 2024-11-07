@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "1027174806025",
+    "project_id": "nolilteo",
+    "storage_bucket": "nolilteo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027174806025:android:a0ac50ea3a77845e86fed8",
+        "android_client_info": {
+          "package_name": "kr.sheeps.nolilteo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027174806025-71j515o1f2l3n3ibr6ko1bk180rkq8gk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.sheeps.nolilteo",
+            "certificate_hash": "fac92ead1ed0571833c96c911beb4cca1728d1ec"
+          }
+        },
+        {
+          "client_id": "1027174806025-9isgfn288vo4aq17k0kmqgp4b9v9f27d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyRgFiUGxzt3dplihzNvVTadUOFs60Nks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027174806025-9isgfn288vo4aq17k0kmqgp4b9v9f27d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1027174806025-1p09tajpmat45di0gd96idjrkcuj45hg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "kr.noteasy.nolilteo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
